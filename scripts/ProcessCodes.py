@@ -8,14 +8,21 @@ with open(fileName, 'r') as infile:
 # Return a list of the lines, breaking at line boundaries.
 print('<div class="row">')
 index = 0
-for line in data.splitlines():
+for line in data.splitlines()[1:]:
+
 
     fields = line.split(",")
-    print( '<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><li>"' + fields[0] + '</li></div>')
+    postcode = fields[0]
+    postcodeBits = postcode.split()
+    postcodeValue = postcodeBits[0] + '_' + postcodeBits[1]
+    print( '<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="' + postcodeValue + '">' + fields[0] + '</input></div>')
 
     index += 1
     if (index % 4 == 0):
         print('</div>')
         print('<div class="row">')
+
+    if (index == 200):
+        break
 
 print('</div>')
