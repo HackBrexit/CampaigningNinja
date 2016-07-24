@@ -1585,8 +1585,10 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
+    padding-bottom:10%;
   margin-right: auto;
   margin-left: auto;
+    text-align: center;
 }
 @media (min-width: 768px) {
   .container {
@@ -1608,6 +1610,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+    text-align: center;
 }
 .row {
   margin-right: -15px;

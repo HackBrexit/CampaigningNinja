@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="icon" href="#">
 
     <title>Campaigning Platform</title>
@@ -14,11 +14,26 @@
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
 
+    <script>
+        $(document).ready(function(){
+            $("#new-camp-btn").click(function(){
+                $("#new-camp").slideToggle("slow");
+            });
+
+            $( "#camp-icon" ).click(function() {
+                $( "#new-camp-btn" ).scroll(function() {
+                    $( "span" ).css( "display", "inline" ).fadeOut( "slow" );
+                });
+            });
+        });
+        
+    </script>
+    
     </head>
 
   <body data-spy="scroll">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,7 +46,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Area</a></li>
+            <li><a href="#">Campaign</a></li>
               <li><a href="#">Map</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
@@ -48,54 +63,74 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li class="active"><a href="#">Campaign <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Post Codes</a></li>
+            <li><a href="#">Doing</a></li>
+            <li><a href="#">Done</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
+          <h1 class="page-header">Campaning Ninja</h1>
 
-          <div class="row placeholders">
+          <div class="container row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail" height="200" width="200">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+                <a id="camp-icon" href="#new-camp">
+                    <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                </a>
+                <h4>New Campaign</h4>
+                <span class="text-muted">create a new campaign</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail" height="200" width="200">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+                <a id="stats-icon" href="#stats">
+                    <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </a>
+              <h4>Statistics</h4>
+              <span class="text-muted">Info about campaigns</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail" height="200" width="200">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail" height="200" width="200">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+                <a id="maps-icon" href="#maps">
+                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                </a>
+              <h4>Map</h4>
+              <span class="text-muted">map of all constituency</span>
             </div>
           </div>
-
-          <h2 class="sub-header">Post Codes</h2>
-            <input type="file" name="file" id="file">
-          <input class="form-control" id="filterTable-input" placeholder="Search Post Code..." type="text" size="1">
-          <div class="table-responsive">
-            <table id="table-data" class="table table-striped" data-filter="true" data-input="#filterTable-input">
             
-            </table>
-          </div>
+            <div id="new-camp-btn" class="container-fluid btn-primary" style="background-color:light-blue">
+                Create New Campaign
+            </div>
+            <div id="new-camp" class="container-fluid" >
+                <div class="jumbotron">
+                    <h2>New Campaign</h2>
+                    <p class="lead">Create a new Campaign</p>
+                </div>
+            </div>
+
+        <div id="camp" class="container-fluid">
+              <h2 class="sub-header">Campaign</h2>
+          
+              <div class="table-responsive">
+                <table id="table-data" class="table table-striped" data-filter="true" data-input="#filterTable-input">
+                    <thead>
+                        <th>Post Code</th>
+                        <th>Done?</th>
+                    </thead>
+                    <tbody>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                    </tbody>
+                </table>
+              </div>     
+         </div>
         </div>
       </div>
     </div>
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    
     <script src="js/bootstrap.js"></script>
-      <script src="js/csv-to-table.js"></script>
+      <script src="js/parser.js"></script>
 
 </body></html>

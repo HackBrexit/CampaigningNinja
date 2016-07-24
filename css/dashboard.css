@@ -102,5 +102,18 @@ body {
 .placeholder img {
   display: inline-block;
   border-radius: 50%;
+    padding-top:15%; !important
+}
+
+span.glyphicon {
+    font-size: 10em;
+}
+
+#new-camp-btn{
+    padding:25px;
+}
+#new-camp{
+    display:none;
+    
 }
 
