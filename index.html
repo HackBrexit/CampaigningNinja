@@ -1,38 +1,20 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="icon" href="#">
+
+    <link rel="icon" href="pics/ninja.png">
 
     <title>Campaigning Platform</title>
-
+    <script src="js/jquery.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
 
-    <script>
-        $(document).ready(function(){
-            $("#new-camp-btn").click(function(){
-                $("#new-camp").slideToggle("slow");
-            });
-            
-            $("#camp-btn").click(function(){
-                $("#data").slideToggle("slow");
-            });
 
-            $( "#camp-icon" ).click(function() {
-                $( "#new-camp-btn" ).scroll(function() {
-                    $( "span" ).css( "display", "inline" ).fadeOut( "slow" );
-                });
-            });
-        });
-        
-    </script>
-    
     </head>
 
   <body data-spy="scroll">
@@ -58,7 +40,7 @@
 
     <div class="container-fluid">
       <div class="row">
-     
+
           <h1 class="page-header">Campaning Ninja</h1>
 
           <div class="container-fluid row placeholders">
@@ -84,11 +66,11 @@
               <span class="text-muted">map of all constituency</span>
             </div>
           </div>
-          
+
           <div class="btn-group-vertical">
-            
+
           </div>
-            
+
             <div id="new-camp-btn" class="container-fluid btn-primary">
                 <h2>Create New Campaign</h2>
             </div>
@@ -406,13 +388,14 @@
 </div>
 
 
-                </div>     
+                </div>
          </div>
         </div>
       </div>
-      <!-- Placed at the end of the document so the pages load faster -->
-    
-    <script src="js/bootstrap.js"></script>
-      <script src="js/parser.js"></script>
 
-</body></html>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  </body>
+</html>
