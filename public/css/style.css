@@ -1,0 +1,10 @@
+#main-menu{
+  background:#17202a !important;
+  background: -webkit-linear-gradient(#566573,#17202a);
+  background: -moz-linear-gradient(#566573,#17202a);
+  background: linear-gradient(#566573,#17202a);
+  
+  height:100%;
+  padding-top:4em;
+  padding-bottom:3em;
+}

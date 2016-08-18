@@ -239,7 +239,7 @@ th {
     page-break-after: avoid;
   }
   .navbar {
-    display: none;
+    display: none
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -1606,15 +1606,12 @@ pre code {
   }
 }
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
     text-align: center;
 }
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
@@ -4261,6 +4258,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   right: 0;
   left: 0;
   z-index: 1030;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 3px solid white !important;
+  background-color: #17202a !important;
+
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
@@ -4270,7 +4272,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -4368,6 +4369,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
+    color:white !important;
   }
 }
 .navbar-form {

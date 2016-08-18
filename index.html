@@ -6,13 +6,14 @@
 
     <link rel="icon" href="pics/ninja.png">
 
-    <title>Campaigning Platform</title>
+    <title>Campaigning Ninja</title>
     <script src="js/jquery.js"></script>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <!--Custom bootstrap for dashboard-->
+    <link href="css/dashboard.css" rel="stylesheet"/>
+    <!--User specified css file-->
+    <link href="css/style.css" rel="stylesheet"/>
 
 
     </head>
@@ -39,359 +40,48 @@
         </nav>
 
     <div class="container-fluid">
+      <div id="main-menu" class="row">
+        <img src="pics/ninja_image.png" alt="campaigning ninja"/>
+      </div>
+
       <div class="row">
+        <h1 class="page-header">Campaning Ninja</h1>
 
-          <h1 class="page-header">Campaning Ninja</h1>
-
-          <div class="container-fluid row placeholders">
-            <div class="col-xs-6 col-sm-4 placeholder">
-                <a id="camp-icon" href="#new-camp">
-                    <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
-                </a>
-                <h4>New Campaign</h4>
-                <span class="text-muted">create a new campaign</span>
-            </div>
-            <div class="col-xs-6 col-sm-4 placeholder">
-                <a id="stats-icon" href="#stats">
-                    <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-                </a>
-              <h4>Statistics</h4>
-              <span class="text-muted">Info about campaigns</span>
-            </div>
-            <div class="col-xs-6 col-sm-4 placeholder">
-                <a id="maps-icon" href="#maps">
-                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                </a>
-              <h4>Map</h4>
-              <span class="text-muted">map of all constituency</span>
-            </div>
+        <div class="container-fluid row placeholders">
+          <div class="col-xs-6 col-sm-4 placeholder">
+            <a id="camp-icon" href="#new-camp">
+              <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+            </a>
+            <h4>New Campaign</h4>
+            <span class="text-muted">create a new campaign</span>
           </div>
-
-          <div class="btn-group-vertical">
-
+          <div class="col-xs-6 col-sm-4 placeholder">
+            <a id="stats-icon" href="#stats">
+              <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+            </a>
+            <h4>Statistics</h4>
+            <span class="text-muted">Info about campaigns</span>
           </div>
-
-            <div id="new-camp-btn" class="container-fluid btn-primary">
-                <h2>Create New Campaign</h2>
-            </div>
-            <div id="new-camp" class="container-fluid" >
-                <div class="jumbotron">
-                    <h2>New Campaign</h2>
-                    <p class="lead">Create a new Campaign</p>
-                </div>
-            </div>
-
-        <div id="camp-btn" class="container-fluid btn-primary" >
-              <h2>Campaign</h2>
+          <div class="col-xs-6 col-sm-4 placeholder">
+            <a id="maps-icon" href="#maps">
+              <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            </a>
+            <h4>Map</h4>
+            <span class="text-muted">map of all constituency</span>
+          </div>
         </div>
-              <div id="data" class="container-fluid" style="display:none;">
-                <div class="row">
-                    <div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AA">BR1 1AA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AB">BR1 1AB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AD">BR1 1AD</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AE">BR1 1AE</input></div>
-      </div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AF">BR1 1AF</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AG">BR1 1AG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AJ">BR1 1AJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1AX">BR1 1AX</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BA">BR1 1BA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BB">BR1 1BB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BP">BR1 1BP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BQ">BR1 1BQ</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BS">BR1 1BS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BT">BR1 1BT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BU">BR1 1BU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BW">BR1 1BW</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BX">BR1 1BX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BY">BR1 1BY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1BZ">BR1 1BZ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DA">BR1 1DA</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DB">BR1 1DB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DD">BR1 1DD</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DE">BR1 1DE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DF">BR1 1DF</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DG">BR1 1DG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DH">BR1 1DH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DJ">BR1 1DJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DL">BR1 1DL</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DN">BR1 1DN</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DP">BR1 1DP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DQ">BR1 1DQ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DR">BR1 1DR</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DS">BR1 1DS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DT">BR1 1DT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DU">BR1 1DU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DW">BR1 1DW</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1DX">BR1 1DX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EA">BR1 1EA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EE">BR1 1EE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EG">BR1 1EG</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EH">BR1 1EH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EJ">BR1 1EJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EL">BR1 1EL</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EN">BR1 1EN</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EP">BR1 1EP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1ER">BR1 1ER</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1ES">BR1 1ES</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EU">BR1 1EU</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EW">BR1 1EW</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EX">BR1 1EX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EY">BR1 1EY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1EZ">BR1 1EZ</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1GA">BR1 1GA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HA">BR1 1HA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HB">BR1 1HB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HD">BR1 1HD</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HE">BR1 1HE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HF">BR1 1HF</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HG">BR1 1HG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HH">BR1 1HH</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HJ">BR1 1HJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HL">BR1 1HL</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HN">BR1 1HN</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HP">BR1 1HP</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HQ">BR1 1HQ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HR">BR1 1HR</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HS">BR1 1HS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HT">BR1 1HT</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HU">BR1 1HU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HW">BR1 1HW</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HX">BR1 1HX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HY">BR1 1HY</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1HZ">BR1 1HZ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JA">BR1 1JA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JB">BR1 1JB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JD">BR1 1JD</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JF">BR1 1JF</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JG">BR1 1JG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JH">BR1 1JH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JJ">BR1 1JJ</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JL">BR1 1JL</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JN">BR1 1JN</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JP">BR1 1JP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JQ">BR1 1JQ</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JR">BR1 1JR</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JS">BR1 1JS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JT">BR1 1JT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JU">BR1 1JU</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JW">BR1 1JW</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JX">BR1 1JX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1JY">BR1 1JY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LA">BR1 1LA</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LB">BR1 1LB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LD">BR1 1LD</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LE">BR1 1LE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LF">BR1 1LF</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LG">BR1 1LG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LH">BR1 1LH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LJ">BR1 1LJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LL">BR1 1LL</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LN">BR1 1LN</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LP">BR1 1LP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LQ">BR1 1LQ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LR">BR1 1LR</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LS">BR1 1LS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LT">BR1 1LT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LU">BR1 1LU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LW">BR1 1LW</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LX">BR1 1LX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LY">BR1 1LY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1LZ">BR1 1LZ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NA">BR1 1NA</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NB">BR1 1NB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1ND">BR1 1ND</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NE">BR1 1NE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NF">BR1 1NF</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NG">BR1 1NG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NH">BR1 1NH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NJ">BR1 1NJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NL">BR1 1NL</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NN">BR1 1NN</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NP">BR1 1NP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NQ">BR1 1NQ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NR">BR1 1NR</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NS">BR1 1NS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NT">BR1 1NT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NU">BR1 1NU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NW">BR1 1NW</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NX">BR1 1NX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NY">BR1 1NY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1NZ">BR1 1NZ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PA">BR1 1PA</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PB">BR1 1PB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PD">BR1 1PD</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PE">BR1 1PE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PF">BR1 1PF</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PG">BR1 1PG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PH">BR1 1PH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PJ">BR1 1PJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PL">BR1 1PL</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PN">BR1 1PN</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PP">BR1 1PP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PQ">BR1 1PQ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PR">BR1 1PR</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PS">BR1 1PS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PT">BR1 1PT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PU">BR1 1PU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PW">BR1 1PW</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PX">BR1 1PX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PY">BR1 1PY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1PZ">BR1 1PZ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QA">BR1 1QA</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QB">BR1 1QB</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QD">BR1 1QD</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QE">BR1 1QE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QF">BR1 1QF</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QG">BR1 1QG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QH">BR1 1QH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QJ">BR1 1QJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QL">BR1 1QL</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QN">BR1 1QN</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QP">BR1 1QP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QQ">BR1 1QQ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QR">BR1 1QR</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QS">BR1 1QS</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QT">BR1 1QT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QU">BR1 1QU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QW">BR1 1QW</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QX">BR1 1QX</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1QY">BR1 1QY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RA">BR1 1RA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RB">BR1 1RB</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RD">BR1 1RD</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RE">BR1 1RE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RF">BR1 1RF</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RG">BR1 1RG</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RH">BR1 1RH</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RJ">BR1 1RJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RL">BR1 1RL</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RN">BR1 1RN</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RP">BR1 1RP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RQ">BR1 1RQ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RR">BR1 1RR</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RS">BR1 1RS</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RT">BR1 1RT</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RU">BR1 1RU</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RW">BR1 1RW</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RX">BR1 1RX</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RY">BR1 1RY</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1RZ">BR1 1RZ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SA">BR1 1SA</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SB">BR1 1SB</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SD">BR1 1SD</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SE">BR1 1SE</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SG">BR1 1SG</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SH">BR1 1SH</input></div>
-</div>
-<div class="row">
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SJ">BR1 1SJ</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SP">BR1 1SP</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SR">BR1 1SR</input></div>
-<div class="col-sm-6 col-xs-12 col-lg-3 col-xl-3"><input type="checkbox" name="postcode" value="BR1_1SS">BR1 1SS</input></div>
-</div>
+    </div>
+    <div id="post-codes" class="row table-responsive">
+      <table data-role="table" data-mode="columntoggle" class=".table-striped .table-hover">
+          <thead>
+            <tr>
 
+            </tr>
+          </thead>
+      </table>
+    </div>
 
-                </div>
-         </div>
-        </div>
-      </div>
+  </div>
 
     <script src="js/bootstrap.js"></script>
     <script src="js/parser.js"></script>
