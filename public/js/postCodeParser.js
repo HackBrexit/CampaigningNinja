@@ -1,18 +1,21 @@
-var request = require('request');
-var stream = require('stream');
 
 var query = [];
-var url = 'https://api.postcodes.io/postcodes'
-;
-var src = new Stream();
-src.readable = true;
+var url = 'https://api.postcodes.io/postcodes';
 
-var dst = new Stream();
-dst.writable = true;
 
-src.pipe(dst);
+/**
+	Creates a table on the webpage with the given parameter array settings
+	@param settings is a collection of data display options
+*/
+function writeToTable(settings){
+	var division = document.getElementById("post-code-table");
+	var table = document.createElement("TABLE");
+	var theadRow = table.createTHead().insertRow(0);
+	var cellHID = theadRow.insertCell(0);
+	cellHID.innerHTML = "<b>#</b>";
+	var cellHPost = theadRow.insertCell(1);
+	cellHPost.innerHTML = "<b>Post Code</b>";
 
-function writeToTable(){
 
 }
 /**
@@ -47,5 +50,26 @@ function getBulkCode(postCodes){
 	} catch(err){
 		console.log(err);
 		console.log("JSON Object expected.")
+	}
+}
+
+/*
+*/
+function getOuterCodes(outerCode){
+	request('api.postcodes.io/outcodes/' + outerCode),function(err,res,info){
+		if(!err&&res.statusCode==200){
+			console.log(info);
+			query = info;
+		}
+	}
+}
+/*
+*/
+function getNearestCodes(outerCode){
+	request('api.postcodes.io/outcodes/' + outerCode + '/nearest'),function(err,res,info){
+		if(!err&&res.statusCode==200){
+			console.log(info);
+			query = info;
+		}
 	}
 }

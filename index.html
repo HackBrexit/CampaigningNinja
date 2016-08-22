@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="pics/ninja.png">
+  <link rel="icon" href="pics/ninja.png">
 
-    <title>Campaigning Ninja</title>
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <!--Custom bootstrap for dashboard-->
-    <link href="css/dashboard.css" rel="stylesheet"/>
-    <!--User specified css file-->
-    <link href="css/style.css" rel="stylesheet"/>
+  <title>Campaigning Ninja</title>
 
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet"/>
+  <!--Custom bootstrap for dashboard-->
+  <link href="css/dashboard.css" rel="stylesheet"/>
+  <!--User specified css file-->
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script
+			  src="https://code.jquery.com/jquery-3.1.0.min.js"
+			  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+			  crossorigin="anonymous"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE5JxkY2tq2WoyBnzRyKJkCticEJsKd-Y" type="text/javascript"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
 
-    </head>
-
-  <body data-spy="scroll">
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Campaigning Ninja</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Campaign</a></li>
-                  <li><a href="#">Map</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Help</a></li>
-              </ul>
-              <form class="navbar-form navbar-right">
-                <input class="form-control" placeholder="Search..." type="text">
-              </form>
-            </div>
-          </div>
-        </nav>
-
+<body data-spy="scroll">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-      <div id="main-menu" class="row">
-        <img src="pics/ninja_image.png" alt="campaigning ninja"/>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Campaigning Ninja</a>
       </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Campaign</a></li>
+          <li><a href="#">Map</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <input class="form-control" placeholder="Search..." type="text">
+        </form>
+      </div>
+    </div>
+  </nav>
 
-      <div class="row">
-        <h1 class="page-header">Campaning Ninja</h1>
-
-        <div class="container-fluid row placeholders">
-          <div class="col-xs-6 col-sm-4 placeholder">
-            <a id="camp-icon" href="#new-camp">
-              <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
-            </a>
-            <h4>New Campaign</h4>
-            <span class="text-muted">create a new campaign</span>
-          </div>
-          <div class="col-xs-6 col-sm-4 placeholder">
-            <a id="stats-icon" href="#stats">
-              <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-            </a>
-            <h4>Statistics</h4>
-            <span class="text-muted">Info about campaigns</span>
-          </div>
-          <div class="col-xs-6 col-sm-4 placeholder">
-            <a id="maps-icon" href="#maps">
-              <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-            </a>
-            <h4>Map</h4>
-            <span class="text-muted">map of all constituency</span>
-          </div>
+  <div class="container-fluid">
+    <div id="main-menu">
+      <img src="pics/ninja_image.png" alt="campaigning ninja"/>
+      <div class="menu-text">
+        <h1 style="color:white">Campaigning Ninja</h1>
+        <p class="lead" style="color:white">A Campaigning platform for all your needs</p>
+        <div class="btn-group" role="group" aria-label="Get Started">
+          <button id="menu-btn" type="button" class="btn btn-secondary">New Campaign</button>
+          <button id="menu-btn" type="button" class="btn btn-secondary">Manage Campaign</button>
+          <button id="menu-btn" type="button" class="btn btn-secondary">Campaign Statistics</button>
         </div>
-    </div>
-    <div id="post-codes" class="row table-responsive">
-      <table data-role="table" data-mode="columntoggle" class=".table-striped .table-hover">
-          <thead>
-            <tr>
-
-            </tr>
-          </thead>
-      </table>
+      </div>
     </div>
 
+    <div id="new-campaign" class="content">
+      <h2>Create a new Campaign</h2>
+      <select>
+        <option value="Barking">Barking</option>
+        <option value="Battersea">Battersea</option>
+        <option value="Beckenham">Beckenham</option>
+        <option value="Bermondsey &amp; Old Southwark">Bermondsey &amp; Old Southwark</option>
+        <option value="Bethnal Green &amp; Bow">Bethnal Green &amp; Bow</option>
+        <option value="Bexleyheath &amp; Crayford">Bexleyheath &amp; Crayford</option>
+        <option value="Brent North">Brent North</option>
+        <option value="Brentford &amp; Isleworth">Brentford &amp; Isleworth</option>
+        <option value="Bromley &amp; Chislehurst">Bromley &amp; Chislehurst</option>
+        <option value="Camberwell &amp; Peckham">Camberwell &amp; Peckham</option>
+        <option value="Carshalton &amp; Wallington">Carshalton &amp; Wallington</option>
+        <option value="Chelsea &amp; Fulham">Chelsea &amp; Fulham</option>
+      </select>
+    </div>
+
+    <div id="manage-campaign" class="content">
+      <h2>Campaign Map</h2>
+      <div id="map" class="panel panel-default"></div>
+      <div class="table-responsive">
+        <table id="post-code-data" data-role="table" data-mode="columntoggle" class=".table-striped .table-hover">
+
+        </table>
+      </div>
+    </div>
+
+    <div id="campaign-stats" class="content">
+      <h2>Stats</h2>
+    </div>
   </div>
 
-    <script src="js/bootstrap.js"></script>
-    <script src="js/parser.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/postCodeParser.js"></script>
+</body>
 </html>

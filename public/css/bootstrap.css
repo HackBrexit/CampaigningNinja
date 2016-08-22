@@ -1078,15 +1078,16 @@ th {
 }
 html {
   font-size: 10px;
-
+  height:100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  height:100%;
 }
 input,
 button,
@@ -1609,6 +1610,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
     text-align: center;
+    height:100%;
 }
 .row {
 
@@ -2270,7 +2272,7 @@ th {
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
-.table > tbody > tr > td,
+.table > t7 > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
   line-height: 1.42857143;
@@ -4284,6 +4286,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  color:white !important;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {

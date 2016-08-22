@@ -1,10 +1,36 @@
 #main-menu{
-  background:#17202a !important;
-  background: -webkit-linear-gradient(#566573,#17202a);
-  background: -moz-linear-gradient(#566573,#17202a);
-  background: linear-gradient(#566573,#17202a);
-  
+  background:#17202a;
+  background: -webkit-linear-gradient()#2c3e50 ,#17202a);
+  background: -moz-linear-gradient( #2c3e50 ,#17202a);
+  background: linear-gradient( #2c3e50 ,#17202a);
+
+  padding-top:8em;
+  padding-bottom:8em;
+  min-height:100%;
+}
+
+#menu-text{
+  color:#fff !important;
+  padding-top:2em;
+  text-align: center;
+}
+
+#menu-btn{
+  border: 1px solid white;
+}
+#menu-btn:hover{
+  color:white;
+  border: 1px solid white;
+}
+
+#map{
   height:100%;
-  padding-top:4em;
-  padding-bottom:3em;
+  width: 80%;
+  margin:0 auto;
+}
+
+.content{
+  height:100% !important;
+  text-align:center;
+  vertical-align: middle;
 }
