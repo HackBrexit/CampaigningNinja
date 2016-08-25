@@ -1,0 +1,39 @@
+#main-menu{
+  background:#17202a;
+  background: -webkit-linear-gradient()#2c3e50 ,#17202a);
+  background: -moz-linear-gradient( #2c3e50 ,#17202a);
+  background: linear-gradient( #2c3e50 ,#17202a);
+
+  padding-top:8em;
+  padding-bottom:8em;
+  min-height:100%;
+  color:white !important;
+}
+
+#menu-text{
+  padding-top:2em;
+  text-align: center
+}
+
+#menu-btn{
+  border: 1px solid white;
+  color:#17202a;
+}
+#menu-btn:hover{
+  color:white;
+  border: 1px solid white;
+}
+
+#map{
+  height:600px;
+  margin:0 auto;
+}
+
+.content{
+  height:100%;
+  width:75%;
+  margin: 0 auto;
+  text-align:center;
+  vertical-align: middle;
+  padding-top:4em;
+}
