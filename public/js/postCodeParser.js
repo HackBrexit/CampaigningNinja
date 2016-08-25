@@ -7,16 +7,14 @@ var url = 'https://api.postcodes.io/postcodes';
 	Creates a table on the webpage with the given parameter array settings
 	@param settings is a collection of data display options
 */
-function writeToTable(settings){
-	var division = document.getElementById("post-code-table");
-	var table = document.createElement("TABLE");
-	var theadRow = table.createTHead().insertRow(0);
-	var cellHID = theadRow.insertCell(0);
-	cellHID.innerHTML = "<b>#</b>";
-	var cellHPost = theadRow.insertCell(1);
-	cellHPost.innerHTML = "<b>Post Code</b>";
-
-
+function writeToTable(constituency){
+	var postCodeTable = angular.module('post-code-table', []);
+	postCodeTable.controller('PhoneListCtrl', function ($scope, $http) {
+		$http.get(''+constituency).success(function(data) {
+			$scope.codes = data;
+		});
+		$scope.orderProp = 'postcode_1';
+	});
 }
 /**
 	Retrieve information for a single post code by query

@@ -7,16 +7,17 @@
   padding-top:8em;
   padding-bottom:8em;
   min-height:100%;
+  color:white !important;
 }
 
 #menu-text{
-  color:#fff !important;
   padding-top:2em;
-  text-align: center;
+  text-align: center
 }
 
 #menu-btn{
   border: 1px solid white;
+  color:#17202a;
 }
 #menu-btn:hover{
   color:white;
@@ -24,13 +25,15 @@
 }
 
 #map{
-  height:100%;
-  width: 80%;
+  height:600px;
   margin:0 auto;
 }
 
 .content{
-  height:100% !important;
+  height:100%;
+  width:75%;
+  margin: 0 auto;
   text-align:center;
   vertical-align: middle;
+  padding-top:4em;
 }

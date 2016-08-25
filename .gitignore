@@ -10,3 +10,6 @@
 *.log
 *.sql
 *.sqlite
+
+/home/minerva/Documents/programming/Hackathon/CampaigningNinja/node_modules/
+/home/minerva/Documents/programming/Hackathon/CampaigningNinja/public/data/db/

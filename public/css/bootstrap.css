@@ -61,7 +61,7 @@ dfn {
 }
 h1 {
   margin: .67em 0;
-  font-size: 2em;
+  font-size: 2em
 }
 mark {
   color: #000;
@@ -3010,7 +3010,7 @@ select[multiple].input-lg {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.42857143;
+  line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -4262,7 +4262,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 1030;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 3px solid white !important;
   background-color: #17202a !important;
 
 }
