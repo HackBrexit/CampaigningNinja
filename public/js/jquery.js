@@ -13,23 +13,6 @@ $(document).ready(function(){
         }
       }
     });
-    var mapOptions = {
-      zoom: 5,
-      center: new google.maps.LatLng(55.3781 ,-3.4360)
-    }
-
-
-    map=new google.maps.Map($('#map')[0], mapOptions);
-
-    $.getJSON("./data/wpc.json", function(uk){
-      geoJsonObject = topojson.feature(uk,uk.objects.wpc);
-      map.data.addGeoJson(geoJsonObject);
-    });
-
-    $.getJSON("./data/niwpc.json",function(ni){
-      geoJsonObject = topojson.feature(ni,ni.objects.wpc);
-      map.data.addGeoJson(geoJsonObject);
-    });
 
     //constituency list
     $("#add-btn").click(function(){
@@ -55,4 +38,23 @@ $(document).ready(function(){
       }
     });
     $("#post-code-data")
+
+
+  //map
+    var mapOptions = {
+      zoom: 5,
+      center: new google.maps.LatLng(55.3781 ,-3.4360)
+    }
+    
+    map=new google.maps.Map($('#map')[0], mapOptions);
+
+    $.getJSON("./data/wpc.json", function(uk){
+      geoJsonObject = topojson.feature(uk,uk.objects.wpc);
+      map.data.addGeoJson(geoJsonObject);
+    });
+
+    $.getJSON("./data/niwpc.json",function(ni){
+      geoJsonObject = topojson.feature(ni,ni.objects.wpc);
+      map.data.addGeoJson(geoJsonObject);
+    });
 });

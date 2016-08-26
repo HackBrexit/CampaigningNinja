@@ -11,5 +11,5 @@
 *.sql
 *.sqlite
 
-./node_modules/
-./public/data/db/
+node_modules/
+public/data/db/
