@@ -45,7 +45,7 @@ $(document).ready(function(){
       zoom: 5,
       center: new google.maps.LatLng(55.3781 ,-3.4360)
     }
-    
+
     map=new google.maps.Map($('#map')[0], mapOptions);
 
     $.getJSON("./data/wpc.json", function(uk){
